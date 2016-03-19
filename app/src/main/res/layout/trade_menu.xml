@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trade"
+        android:id="@+id/tradeText"
+        android:layout_row="4"
+        android:layout_column="10"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:layout_gravity="center">
+
+            <GridLayout
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_margin="5dp"
+                android:id="@+id/columnLeft">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Card"
+                    android:id="@+id/textView"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Price"
+                    android:id="@+id/textView2"
+                    android:layout_row="0"
+                    android:layout_column="2" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_margin="5dp"
+                android:id="@+id/columnRight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Price"
+                    android:id="@+id/textView3"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Card"
+                    android:id="@+id/textView4"
+                    android:layout_row="0"
+                    android:layout_column="2" />
+            </GridLayout>
+        </GridLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Find Card"
+            android:id="@+id/findButtonSide1"
+            android:layout_column="30"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="testLayoutChange" />
+
+    </FrameLayout>
+
+</LinearLayout>
